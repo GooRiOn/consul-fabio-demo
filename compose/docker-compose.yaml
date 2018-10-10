@@ -1,0 +1,26 @@
+version: '3.5'
+services:
+  start_dependencies:
+      image: dadarek/wait-for-dependencies
+      depends_on:
+        - fabio
+      command: consul:8500
+  consul:
+    image: "consul"
+    ports:
+     - "8500:8500"
+    networks:
+    - cfab
+  fabio:
+    image: "fabiolb/fabio"    
+    environment:
+    - FABIO_REGISTRY_CONSUL_ADDR=consul:8500
+    ports:
+    - "9998:9998"
+    - "9999:9999"
+    networks:
+    - cfab
+
+networks:
+  cfab:
+    name: cfab-network
