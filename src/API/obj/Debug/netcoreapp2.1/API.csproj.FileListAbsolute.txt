@@ -1,0 +1,14 @@
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.1\API.deps.json
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.1\API.runtimeconfig.json
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.1\API.runtimeconfig.dev.json
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.1\API.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.1\API.pdb
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.csprojResolveAssemblyReference.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.csproj.CoreCompileInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.RazorAssemblyInfo.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.RazorAssemblyInfo.cs
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.AssemblyInfoInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.AssemblyInfo.cs
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.RazorTargetAssemblyInfo.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.1\API.pdb
