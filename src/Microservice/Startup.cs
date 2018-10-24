@@ -33,7 +33,7 @@ namespace Microservice
             var client = new ConsulClient();
             var agentReg = new AgentServiceRegistration()
             {
-                Address = "http://localhost",
+                Address = "host.docker.internal",
                 ID = "MY_UNIQUE_ID",
                 Name = "Microservice1",
                 Port = 5001,
@@ -42,7 +42,8 @@ namespace Microservice
                     Interval = TimeSpan.FromSeconds(5),
                     DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
                     HTTP = "http://host.docker.internal:5001/api/values"
-                }}
+                }},
+                Tags = new[] { "urlprefix-/api/values" }
             };
 
             client.Agent.ServiceRegister(agentReg).Wait();

@@ -6,7 +6,7 @@ namespace API.Services
 {
     public interface IMicroservice
     {
-        [Get("/api/Values")]
+        [Get("/api/values")]
         Task<IEnumerable<string>> GetValuesAsync();
     }
 }
