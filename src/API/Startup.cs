@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using API.Settings;
+using Consul;
 
 namespace API
 {
@@ -30,6 +31,8 @@ namespace API
             Configuration.GetSection("Host").Bind(settings);
 
             services.AddSingleton(settings);
+
+            services.AddSingleton<IConsulClient>(sp => new ConsulClient());
 
             services.AddMvc();
         }

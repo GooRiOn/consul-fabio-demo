@@ -10,6 +10,6 @@ namespace API.Settings
     public class ServiceSettings
     {
         public string ServiceName { get; set; }
-        public string HostUrl { get; set; }
+        public string RegistryName { get; set; }
     }
 }

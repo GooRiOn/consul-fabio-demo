@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using API.Services;
 using RestEase;
 using System.Threading.Tasks;
+using Consul;
+using API.Settings;
+using System.Linq;
 
 namespace API.Controllers
 {
@@ -11,14 +14,18 @@ namespace API.Controllers
     {
         private readonly IMicroservice _microservice;
 
-        //public ValuesController(HostSettings settings)
-        //{
-        //    var host = settings.Services.FirstOrDefault(s => s.ServiceName == "Microservice1")?.HostUrl;
-        //    _microservice = RestClient.For<IMicroservice>(host);
-        //}
+        public ValuesController(IConsulClient client, HostSettings settings)
+        {
+            var registryName = settings.Services
+                .FirstOrDefault(s => s.ServiceName == "Microservice1")?.RegistryName;
 
-        public ValuesController()
-            => _microservice = RestClient.For<IMicroservice>("http://localhost:5001");
+            var serviceRegistration = client.Catalog.Service(registryName)
+                .Result.Response.First();
+
+            var host = $"{serviceRegistration.ServiceAddress}:{serviceRegistration.ServicePort}";
+
+            _microservice = RestClient.For<IMicroservice>(host);
+        }
 
         // GET api/values
         [HttpGet]

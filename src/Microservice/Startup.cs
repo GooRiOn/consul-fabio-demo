@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Consul;
 
 namespace Microservice
 {
@@ -29,10 +30,22 @@ namespace Microservice
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
+            var client = new ConsulClient();
+            var agentReg = new AgentServiceRegistration()
             {
-                app.UseDeveloperExceptionPage();
-            }
+                Address = "http://localhost",
+                ID = "MY_UNIQUE_ID",
+                Name = "Microservice1",
+                Port = 5001,
+                Checks = new[] {new AgentServiceCheck
+                {
+                    Interval = TimeSpan.FromSeconds(5),
+                    DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
+                    HTTP = "http://host.docker.internal:5001/api/values"
+                }}
+            };
+
+            client.Agent.ServiceRegister(agentReg).Wait();
 
             app.UseMvc();
         }
