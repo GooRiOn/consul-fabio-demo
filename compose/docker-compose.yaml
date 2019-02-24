@@ -15,6 +15,7 @@ services:
     image: "fabiolb/fabio"    
     environment:
     - FABIO_REGISTRY_CONSUL_ADDR=consul:8500
+    #- FABIO_PROXY_STRATEGY=rr
     ports:
     - "9998:9998"
     - "9999:9999"

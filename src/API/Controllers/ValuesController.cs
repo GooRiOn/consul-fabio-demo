@@ -3,9 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using API.Services;
 using RestEase;
 using System.Threading.Tasks;
-using Consul;
-using API.Settings;
-using System.Linq;
 
 namespace API.Controllers
 {
@@ -14,7 +11,7 @@ namespace API.Controllers
     {
         private readonly IMicroservice _microservice;
 
-        public ValuesController(IConsulClient client, HostSettings settings)
+        public ValuesController()
             => _microservice = RestClient.For<IMicroservice>("http://localhost:9999");
 
         // GET api/values

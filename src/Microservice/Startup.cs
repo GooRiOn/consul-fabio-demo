@@ -28,27 +28,31 @@ namespace Microservice
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IApplicationLifetime appLifetime, IHostingEnvironment env)
         {
             var client = new ConsulClient();
+
+            var serviceId = Guid.NewGuid().ToString();
             var agentReg = new AgentServiceRegistration()
             {
                 Address = "host.docker.internal",
-                ID = "MY_UNIQUE_ID",
+                ID = serviceId,
                 Name = "Microservice1",
                 Port = 5001,
-                Checks = new[] {new AgentServiceCheck
+                Check = new AgentServiceCheck
                 {
                     Interval = TimeSpan.FromSeconds(5),
                     DeregisterCriticalServiceAfter = TimeSpan.FromSeconds(5),
                     HTTP = "http://host.docker.internal:5001/api/values"
-                }},
+                },
                 Tags = new[] { "urlprefix-/api/values" }
             };
 
-            client.Agent.ServiceRegister(agentReg).Wait();
+            client.Agent.ServiceRegister(agentReg).GetAwaiter().GetResult();
 
             app.UseMvc();
+
+            appLifetime.ApplicationStopped.Register(() => client.Agent.ServiceDeregister(serviceId));
         }
     }
 }
