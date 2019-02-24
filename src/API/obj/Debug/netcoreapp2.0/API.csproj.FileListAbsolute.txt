@@ -1,0 +1,11 @@
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.0\API.deps.json
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.0\API.runtimeconfig.json
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.0\API.runtimeconfig.dev.json
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.0\API.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.0\API.csprojResolveAssemblyReference.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.0\API.csproj.CoreCompileInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.0\API.AssemblyInfoInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.0\API.AssemblyInfo.cs
+C:\Repositories\CFDemo\ConsulFabioDemo\API\bin\Debug\netcoreapp2.0\API.pdb
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.0\API.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\API\obj\Debug\netcoreapp2.0\API.pdb

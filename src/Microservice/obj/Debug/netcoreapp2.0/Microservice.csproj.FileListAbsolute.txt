@@ -1,0 +1,10 @@
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.0\Microservice.deps.json
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.0\Microservice.runtimeconfig.json
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.0\Microservice.runtimeconfig.dev.json
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.0\Microservice.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.0\Microservice.pdb
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.0\Microservice.csproj.CoreCompileInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.0\Microservice.AssemblyInfoInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.0\Microservice.AssemblyInfo.cs
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.0\Microservice.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.0\Microservice.pdb

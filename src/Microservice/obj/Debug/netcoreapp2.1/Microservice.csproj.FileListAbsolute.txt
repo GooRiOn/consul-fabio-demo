@@ -1,0 +1,14 @@
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.1\Microservice.deps.json
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.1\Microservice.runtimeconfig.json
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.1\Microservice.runtimeconfig.dev.json
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.1\Microservice.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\bin\Debug\netcoreapp2.1\Microservice.pdb
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.csprojResolveAssemblyReference.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.csproj.CoreCompileInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.RazorAssemblyInfo.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.RazorAssemblyInfo.cs
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.AssemblyInfoInputs.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.AssemblyInfo.cs
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.RazorTargetAssemblyInfo.cache
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.dll
+C:\Repositories\CFDemo\ConsulFabioDemo\Microservice\obj\Debug\netcoreapp2.1\Microservice.pdb
