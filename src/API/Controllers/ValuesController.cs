@@ -14,17 +14,18 @@ namespace API.Controllers
     {
         private readonly IMicroservice _microservice;
 
-        public ValuesController(IConsulClient client, HostSettings settings)
+        public ValuesController()
         {
-            var registryName = settings.Services
-                .FirstOrDefault(s => s.ServiceName == "Microservice1")?.RegistryName;
+            var query = new ConsulClient().Catalog.Service("Microservice1").GetAwaiter().GetResult();
+            var instance = LoadBalance();    
+            
 
-            var serviceRegistration = client.Catalog.Service(registryName)
-                .Result.Response.First();
-
-            var host = $"{serviceRegistration.ServiceAddress}:{serviceRegistration.ServicePort}";
+            var host = $"{instance.ServiceAddress}:{instance.ServicePort}";
 
             _microservice = RestClient.For<IMicroservice>(host);
+
+            CatalogService LoadBalance()
+                => query.Response.First();
         }
 
         // GET api/values
